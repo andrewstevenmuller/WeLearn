@@ -1,42 +1,43 @@
 <ion-view title="Signup" hide-back-button="true" id="page3">
     <ion-content padding="true" class="has-header">
         <a ui-sref="login" id="signup-button7" class="button button-dark  button-block button-clear icon-left ion-android-arrow-back"></a>
-        <form id="signup-form2" class="list">
+        <form id="signup-form2" class="list" action="http://172.16.39.24:80/welearnapi/api.php" method="POST">
+          <input name="action" value="register" type="hidden" />
             <ion-list id="signup-list2">
                 <label class="item item-input" id="signup-input3">
                     <span class="input-label">Name</span>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" name="name">
                 </label>
                 <label class="item item-input" id="signup-input4">
                     <span class="input-label">Surname</span>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" name="surname">
                 </label>
                 <label class="item item-input" id="signup-input7">
                     <span class="input-label">Email</span>
-                    <input type="email" placeholder="">
+                    <input type="email" placeholder="" name="email1">
                 </label>
                 <label class="item item-input" id="signup-input6">
                     <span class="input-label">Grade</span>
-                    <input type="number" placeholder="">
+                    <input type="number" placeholder="" name="grade">
                 </label>
                 <label class="item item-input" id="signup-input8">
                     <span class="input-label">School</span>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" name="school">
                 </label>
                 <label class="item item-input" id="signup-input5">
                     <span class="input-label">Password</span>
-                    <input type="password" placeholder="">
+                    <input type="password" placeholder="" name="password1">
                 </label>
                 <label class="item item-select" id="signup-select1">
                     <span class="input-label">Role</span>
-                    <select>
-                        <option>Student</option>
-                        <option>Teacher</option>
-                        <option>Tutor</option>
+                    <select name="role">
+                        <option value="0">Student</option>
+                        <option value="1">Teacher</option>
+                        <option value="2">Tutor</option>
                     </select>
                 </label>
             </ion-list>
-            <button id="signup-button3" class="button button-stable  button-block">Sign up</button>
+            <button type="submit" id="signup-button3" class="button button-stable  button-block">Sign up</button>
         </form>
     </ion-content>
 </ion-view>
