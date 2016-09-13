@@ -10,85 +10,85 @@ angular.module('app.routes', [])
     
   
 
-      .state('login', {
-    url: '/page2',
+    .state('login', {
+    url: '/login',
     templateUrl: 'templates/login.html',
     controller: 'loginCtrl'
   })
 
   .state('signup', {
-    url: '/page3',
+    url: '/signup',
     templateUrl: 'templates/signup.html',
     controller: 'signupCtrl'
   })
 
   .state('error', {
-    url: '/page4',
+    url: '/error',
     templateUrl: 'templates/error.html',
     controller: 'errorCtrl'
   })
 
   .state('mainMenu', {
-    url: '/page5',
+    url: '/mainMenu',
     templateUrl: 'templates/mainMenu.html',
     controller: 'mainMenuCtrl'
   })
 
   .state('profile', {
-    url: '/page6',
+    url: '/profile',
     templateUrl: 'templates/profile.html',
     controller: 'profileCtrl'
   })
 
   .state('resourceCentre', {
-    url: '/page8',
+    url: '/resourceCentre',
     templateUrl: 'templates/resourceCentre.html',
     controller: 'resourceCentreCtrl'
   })
 
   .state('settings', {
-    url: '/page9',
+    url: '/settings',
     templateUrl: 'templates/settings.html',
     controller: 'settingsCtrl'
   })
 
   .state('subject', {
-    url: '/page10',
+    url: '/subject',
     templateUrl: 'templates/subject.html',
     controller: 'subjectCtrl'
   })
 
   .state('courseMaterials', {
-    url: '/page11',
+    url: '/courseMaterials',
     templateUrl: 'templates/courseMaterials.html',
     controller: 'courseMaterialsCtrl'
   })
 
   .state('studyingMaterials', {
-    url: '/page12',
+    url: '/studyingMaterials',
     templateUrl: 'templates/studyingMaterials.html',
     controller: 'studyingMaterialsCtrl'
   })
 
   .state('pastPapers', {
-    url: '/page13',
+    url: '/pastPapers',
     templateUrl: 'templates/pastPapers.html',
     controller: 'pastPapersCtrl'
   })
 
   .state('collaborativeForum', {
-    url: '/page14',
+    url: '/collaborativeForum',
     templateUrl: 'templates/collaborativeForum.html',
     controller: 'collaborativeForumCtrl'
   })
 
   .state('collaborativeForum2', {
-    url: '/page15',
+    url: '/collaborativeForum2',
     templateUrl: 'templates/collaborativeForum2.html',
     controller: 'collaborativeForum2Ctrl'
   })
 
-$urlRouterProvider.otherwise('/page2')
+$urlRouterProvider.otherwise('/login')
 
   
 
