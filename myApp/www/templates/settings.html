@@ -1,3 +1,11 @@
 <ion-view title="Settings" hide-back-button="true" id="page9">
-    <ion-content padding="true" class="has-header"></ion-content>
+    <ion-content padding="true" class="has-header">
+        <a ui-sref="mainMenu" id="settings-button40" class="button button-dark  button-block button-clear icon-left ion-android-arrow-back"></a>
+        <div class="spacer" style="width: 300px; height: 51px;"></div>
+        <form id="settings-form10" class="list">
+            <ion-toggle toggle-class="toggle-positive" id="settings-toggle1">Notifications</ion-toggle>
+        </form>
+        <div class="spacer" style="width: 300px; height: 45px;"></div>
+        <a ui-sref="login" id="settings-button42" class="button button-stable  button-block">Log out</a>
+    </ion-content>
 </ion-view>
